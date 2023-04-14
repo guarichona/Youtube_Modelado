@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.header_padre {
+    width: 100%;
+    height: 43px;
+    padding: 8px 0;
+    /* display: flex;
+    flex-flow: row nowrap; */
+    justify-content: space-between;
+    background: purple;
+    align-items: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    background: #FFF;
+}
+
+/* ____________________Contenedores Header_______________________ */
+
+.bar_logo {
+
+    background: salmon;
+    height: 100%;
+    width: 200px;
+    padding: 0 20px;
+    flex: 1 0 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Elementos de .bar_logo */
+
+.bar_logo button {
+    background: none;
+    border: none;
+
+}
+
+.bar_logo a {
+    color: #3b3a3a;
+}
+
+.contenedor_logo {
+    height: 17px;
+    /* background: greenyellow; */
+}
+
+
+
+/* ------------------------------------------------------- */
+
+.input_principal {
+    /* background: yellow; */
+    height: 35px;
+    flex: 5 0 700px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.busqueda {
+    display: flex;
+    height: 100%;
+    width: 70%;
+
+}
+
+.busqueda input {
+    display: flex;
+    width: 90%;
+    border: 1px solid #dedede;
+    border-radius: 35px 0 0 35px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.busqueda button {
+    background: #dedede;
+    width: 10%;
+    border-radius: 0 35px 35px 0px;
+    border: 1px solid #dedede;
+    justify-content: center;
+}
+
+.voz {
+    background: none;
+    border: none;
+}
+
+.voz i {
+    color: #3b3a3a;
+    font-size: 1.2rem;
+}
+
+
+
+/* _____________________________________________________________ */
+.social {
+    /* background: green; */
+    height: 100%;
+    width: 200px;
+    /* flex: 1 0 200px; */
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.social a {
+    color: #3b3a3a;
+
+}
+
+
+/* __________________Main Página____________________ */
+
+.main_padre {
+    display: flex;
+    flex-flow: column;
+    /* justify-content: space-between; */
+    background: greenyellow;
+}
+
+/* Scrollbar */
+/* 
+body::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #959292;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb::hover {
+    background: #000;
+}
+
+/* Estilos a mi Scrollbar de barra de navegación */
+
+/* Esto modifica el contenedor de la barrita */
+/* .main_padre nav::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Para la barrita de scrollbar aplico lo siguiente */
+/* .main_padre nav::-webkit-scrollbar-thumb {
+    background: #959292;
+    border-radius: 5px;
+}
+    */
+
+
+/*--------------------- Barra de Navegación Izquierdo -------------------*/
+
+.main_padre nav {
+    background: yellow;
+
+    width: 180px;
+    height: 560px;
+    /* La altura especificada para el overflow mw saliera */
+    margin: 0 80px 0 10px;
+    overflow: hidden;
+}
+
+.main_padre nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main_padre nav a {
+    width: 80%;
+    height: 33px;
+    margin: 4px 0;
+    padding: 0 0 0 10px;
+    border-radius: 8px;
+    color: #3b3a3a;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+
+
+    font-size: 13px;
+    font-weight: 400;
+    /* Para juntar las letras */
+    letter-spacing: -0.5px;
+    /* QUe el texto de cada linea se mantega en una misma línea */
+    white-space: nowrap;
+    overflow: hidden;
+    /* Para colocar los tres puntos  */
+    text-overflow: ellipsis;
+
+}
+
+.main_padre nav a:hover {
+    background: #ede8e8;
+}
+
+.main_padre nav li a img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.icons_fa {
+
+    width: 18px;
+    height: 18px;
+    stroke-width: 1rem;
+    stroke: #000;
+    fill: none;
+    /* margin: 10px 0; */
+
+}
+
+
+
+
+
+
+/* --------------------- Contenido Principal ------------------- */
+
+/* Videos */
+
+.contenedor_video {
+
+    background: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.contenido_video {
+    background: white;
+    width: 30%;
+    height: 300px;
+}

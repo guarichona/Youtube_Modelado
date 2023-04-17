@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header_padre {
+    width: 100%;
+    height: 43px;
+    padding: 8px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    align-items: flex-start;
+    gap: 30px;
+    /* position: sticky; */
+    top: 0;
+    background: #FFF;
+}
+
+/* _______Scroll-Bar______ */
+/* Porqué utilizamos webkit, porque el seudoelemento scrollbar es nuevo, para que no existan problemas de compatibilidad entre navegadores */
+
+/* Me permite modificar el fondo de mi scrollbar */
+.cuerpo_pagina::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+.cuerpo_pagina::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+.contenedor_nav::-webkit-scrollbar {
+    width: 9px;
+}
+
+.contenedor_nav::-webkit-scrollbar-thumb {
+
+    background: #a4a2a2;
+    border-radius: 5px;
+}
+
+
+
+/* ____________________Contenedores Header_______________________ */
+
+.header_padre {
+    width: 100%;
+    height: 60px;
+    padding: 8px 0;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    position: sticky;
+
+    align-items: center;
+    gap: 30px;
+    /* position: sticky; */
+    top: 0;
+    background: #FFF;
+}
+
+
+.bar_logo {
+
+    /* background: salmon; */
+    height: 100%;
+
+    padding: 0 20px;
+    flex: 1 0 180px;
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: flex-start; */
+    align-items: center;
+
+}
+
+/* Elementos de .bar_logo */
+
+.bar_logo button {
+    background: none;
+    border: none;
+
+}
+
+
+
+.bar_logo .contenedor_logo {
+    height: 25px;
+    margin: auto 5px auto 10px;
+    /* background: greenyellow; */
+}
+
+.bar_logo div sup {
+    font-size: 0.8rem;
+    /* background: #3b3a3a; */
+}
+
+
+
+/* ------------------------------------------------------- */
+
+.input_principal {
+    /* background: yellow; */
+    height: 100%;
+    flex: 5 0 600px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.busqueda {
+    display: flex;
+    height: 100%;
+    width: 70%;
+
+}
+
+.busqueda input {
+    display: flex;
+    width: 90%;
+    border: 1px solid #dedede;
+    border-radius: 35px 0 0 35px;
+    text-align: left;
+    padding: 0 15px;
+    font-size: 1.1rem;
+}
+
+.busqueda button {
+    background: #F0EEED;
+
+    width: 15%;
+    border-radius: 0 35px 35px 0px;
+    border: 1px solid #dedede;
+    justify-content: center;
+}
+
+
+
+
+/* _____________________________________________________________ */
+.social {
+    /* background: green; */
+    height: 100%;
+    width: 200px;
+    flex: 1 0 200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/* Butón de Acceder */
+
+
+
+.acceder_boton {
+    background: none;
+    border: 2px solid #F0EEED;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+
+    font-weight: 600;
+    color: #2d36e0;
+    font-size: 1.1rem;
+}
+
+
+/* _____________________________________________________________ */
+
+.cuerpo_pagina {
+
+    /* background: #959191; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/* __________________Contenedor_Nav_________________  */
+
+.contenedor_nav {
+
+    padding: 10px;
+    margin: 0 20px 0 0;
+
+    /* background: rgb(116, 93, 163); */
+    /* Características de la letra de mi Navegador */
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+
+    /* Caracterosisticas de mi contenedor de navegación */
+    width: 250px;
+    height: 650px;
+    overflow: auto;
+
+
+}
+
+.contenedor_nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.contenedor_nav a {
+    /* background: rgb(207, 207, 174); */
+    width: 200px;
+    height: 40px;
+
+
+    margin: 6px 0;
+    padding: 0 0 0 10px;
+    border-radius: 8px;
+    color: #3b3a3a;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.contenedor_nav a:hover {
+    background: #F0EEED;
+}
+
+
+
+.contenedor_nav a div {
+    width: 135px;
+    /* DESBORDAMIENTO */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* El desbordamiento va a ser controlado por el ancho de mi elemento ".contenedor_nav a" */
+
+
+}
+
+.contenedor_nav hr {
+    background: #e2dad6;
+    height: 0.5px;
+    border: none;
+    border-radius: 1px;
+    margin: 15px 0;
+    width: 180px;
+}
+
+.contenedor_nav li a img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ____________Otros Elementos de Contenedor_nav___________ */
+
+.icons_fa {
+
+    /* Acondicionamiento de los iconos de font awesome */
+    margin: 0 3px 0 3px;
+    width: 18px;
+    height: 18px;
+    stroke-width: 1rem;
+    stroke: #000;
+    fill: none;
+    /* margin: 10px 0; */
+
+}
+
+.contenedor_nav .acceder {
+
+    font-size: 16px;
+    padding: 5px 0 5px 20px;
+}
+
+.acceder p {
+    margin: auto auto 10px auto;
+
+}
+
+.contenedor_nav h1 {
+
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    color: #000;
+    margin: 11px 0 6px 10px;
+
+}
+
+
+/* ___________________Contenedores Videos_____________________ */
+
+.contenedor_video {
+
+
+    background: #542424;
+    /* margin: 20px; */
+    padding: 10px;
+    width: 75%;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.contenido_video {
+    background: white;
+    width: 28%;
+    height: 300px;
+    margin: 10px 0;
+}

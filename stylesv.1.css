@@ -5,20 +5,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.header_padre {
-    width: 100%;
-    height: 43px;
-    padding: 8px 0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-
-    align-items: flex-start;
-    gap: 30px;
-    /* position: sticky; */
-    top: 0;
-    background: #FFF;
-}
 
 /* _______Scroll-Bar______ */
 /* Porqué utilizamos webkit, porque el seudoelemento scrollbar es nuevo, para que no existan problemas de compatibilidad entre navegadores */
@@ -43,7 +29,9 @@
     border-radius: 5px;
 }
 
-
+.padre {
+    height: 100%;
+}
 
 /* ____________________Contenedores Header_______________________ */
 
@@ -51,19 +39,23 @@
     width: 100%;
     height: 60px;
     padding: 8px 0;
+    background: #FFF;
 
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 
-    position: sticky;
 
     align-items: center;
     gap: 30px;
-    /* position: sticky; */
+
+    /* POSICIONAMIENTO */
     top: 0;
-    background: #FFF;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+
 }
 
 
@@ -135,7 +127,10 @@
 }
 
 .busqueda button {
-    background: #F0EEED;
+    background-image: url(/Icons/lupav.2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 
     width: 15%;
     border-radius: 0 35px 35px 0px;
@@ -189,16 +184,23 @@
 
 /* _____________________________________________________________ */
 
-.cuerpo_pagina {
+/* .cuerpo_pagina { */
 
-    /* background: #959191; */
-    width: 100%;
-    height: auto;
+/* background: #959191; */
+
+/* PoSICIONAMIENTO */
+/* position: relative; */
+
+
+/* CARACTERISTICAS GENERALES */
+/* width: 100%;
+    height: 90%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-}
+
+} */
 
 
 /* __________________Contenedor_Nav_________________  */
@@ -216,9 +218,15 @@
     letter-spacing: -0.3px;
 
     /* Caracterosisticas de mi contenedor de navegación */
+
     width: 250px;
     height: 650px;
     overflow: auto;
+
+    position: fixed;
+    top: 60px;
+    left: 0;
+
 
 
 }
@@ -318,20 +326,40 @@
 
 .contenedor_video {
 
+    /* positionamiento para aplicar sticky al nav */
+    position: absolute;
+    top: 60px;
+    left: 270px;
 
-    background: #542424;
+    /* background: #542424; */
     /* margin: 20px; */
     padding: 10px;
-    width: 75%;
-    height: 200px;
+    width: 82%;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+
+    /* DESBORDAMIENTO */
+    /* overflow: auto; */
+
 }
 
 .contenido_video {
     background: white;
     width: 28%;
     height: 300px;
-    margin: 10px 0;
+    margin: 20px 0;
+}
+
+.carga_video {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+
+
+}
+
+.titulo_video {
+    font-size: 15px;
 }

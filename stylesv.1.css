@@ -220,7 +220,7 @@
     /* Caracterosisticas de mi contenedor de navegación */
 
     width: 250px;
-    height: 650px;
+    height: 100vh;
     overflow: auto;
 
     position: fixed;

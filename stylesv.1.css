@@ -127,7 +127,7 @@
 }
 
 .busqueda button {
-    background-image: url(/Icons/lupav.2.svg);
+    background-image: url(./Icons/lupav.2.svg);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;

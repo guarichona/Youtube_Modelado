@@ -21,12 +21,14 @@
 
 .contenedor_nav::-webkit-scrollbar {
     width: 9px;
+
 }
 
 .contenedor_nav::-webkit-scrollbar-thumb {
 
     background: #a4a2a2;
     border-radius: 5px;
+
 }
 
 .padre {
@@ -207,7 +209,7 @@
 
 .contenedor_nav {
 
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     margin: 0 20px 0 0;
 
     /* background: rgb(116, 93, 163); */
@@ -220,7 +222,7 @@
     /* Caracterosisticas de mi contenedor de navegación */
 
     width: 250px;
-    height: 100vh;
+    height: 670px;
     overflow: auto;
 
     position: fixed;

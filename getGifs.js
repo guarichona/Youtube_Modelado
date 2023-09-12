@@ -7,7 +7,7 @@ const getGifs = async () => {
     const url = `https://api.giphy.com/v1/gifs/search?api_key=BhVkS6kEOuXj1bTHSI9KN1FzBFyWC1df&q=${categoryq}&limit=9`;
     const resp = await fetch(url);
     const { data } = await resp.json();
-    console.log('hola');
+    console.log('hola desde el fetch');
     // TODO
     const gifs = data.map(img => ({
         id: img.id,
@@ -23,6 +23,7 @@ const getGifs = async () => {
         collection2[i].childNodes[1].src = gifs[i].url;
         collection2[i].childNodes[3].innerText = gifs[i].title;
     }
+    console.log('hola desde el final del script');
 }
 
 console.log(getGifs());
